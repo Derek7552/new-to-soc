@@ -104,3 +104,17 @@
 > **判**：在 **TDIR** 循环中分清 **FP/TP** →
 > **应**：TP 确认即启 **IR** →
 > **量**：用 **MTTD/MTTR** 度量，向 **SLA** 交付。
+
+---
+
+## 进阶：AI 原生 SOC 时代新词
+
+掌握 Top 20 经典术语后，建议补充以下 2024 年后兴起的新词汇（详见 [Top 100 附录 A1-A12](glossary-top100.md#附录ai-原生-soc-时代新词条a1-a12)）：
+
+- **Agentic SOC** — 多 AI Agent 协同的新一代 SOC
+- **AI SOC Analyst** — 替代 Tier 1 分析师的 AI Agent（如 Dropzone AI）
+- **Glass Box AI** — 推理过程全程可审计的 AI
+- **MCP** — 跨厂商 AI Agent 协作的开放协议
+- **HITL** — 人在回路，AI 自主决策 + 人审批的混合模式
+
+→ 想理解 SOC 行业的范式迁移，看 [SOC 范式迁移](soc-paradigm-shift.md)。

@@ -300,27 +300,74 @@
 
 ---
 
+## 附录：AI 原生 SOC 时代新词条（A1-A12）
+
+> 2024 年后随 Agentic AI 浪潮兴起的新词汇。Top 100 是建立 SOC 经典认知的基础，本附录补充第三代 SOC 必须了解的新概念。详见 [SOC 范式迁移](soc-paradigm-shift.md)。
+
+### A. 新形态与新角色（A1-A4）
+
+| # | 术语 | 全称 | 释义 |
+|---|------|------|------|
+| A1 | **Agentic SOC** | — | 智能体 SOC。由多个 AI Agent（分析师、猎人、情报员等）协同运作的 SOC 形态 |
+| A2 | **AI SOC Analyst** | — | AI 安全分析师。能像人类 Tier 1 分析师一样自主调查告警的 AI Agent，代表产品如 Dropzone AI |
+| A3 | **AI Threat Hunter** | — | AI 威胁猎人。基于假设驱动主动狩猎的 AI Agent，可把 10-20 小时狩猎压缩到 1 小时 |
+| A4 | **Copilot** | — | 安全副驾驶。在传统平台中作为辅助工具存在的 AI 助手，如 Microsoft Security Copilot |
+
+**演进逻辑**：传统 SOC 是"人 + 工具" → **Copilot** 是"人 + 工具 + AI 助手" → **Agentic SOC** 是"人 + **AI SOC Analyst** + **AI Threat Hunter** + ... 多 Agent 协作"。
+
+### B. AI 核心技术与协议（A5-A8）
+
+| # | 术语 | 全称 | 释义 |
+|---|------|------|------|
+| A5 | **LLM** | Large Language Model | 大语言模型。AI SOC 平台的核心智能引擎（如 GPT-4、Claude） |
+| A6 | **RAG** | Retrieval-Augmented Generation | 检索增强生成。让 LLM 通过外部检索获取知识，避免凭空"幻觉" |
+| A7 | **MCP** | Model Context Protocol | 模型上下文协议。让不同厂商的 AI Agent 互相协作和上下文共享的开放标准 |
+| A8 | **Glass Box AI** | — | 玻璃盒 AI。AI 推理过程全程可见、可审计，与"黑盒"相对，是 AI 信任的核心机制 |
+
+**技术依赖**：以 **LLM** 为大脑 → 用 **RAG** 接入企业知识 → 通过 **MCP** 实现跨厂商互操作 → 用 **Glass Box** 让所有推理可审计。
+
+### C. AI 治理与协作模式（A9-A10）
+
+| # | 术语 | 全称 | 释义 |
+|---|------|------|------|
+| A9 | **HITL** | Human-in-the-Loop | 人在回路。AI 自主决策但人保留关键节点审批权的协作模式 |
+| A10 | **Autonomy Level** | — | 自主级别。AI Agent 被授权独立完成动作的程度，从全人工到全自主划分多个等级 |
+
+**治理逻辑**：根据**业务风险**和 **Autonomy Level** 决定 AI 自主到什么程度 → 高风险场景保留 **HITL** 审批 → 低风险场景允许全自主执行。
+
+### D. 大平台 AI 化的具体产品概念（A11-A12）
+
+| # | 术语 | 全称 | 释义 |
+|---|------|------|------|
+| A11 | **XSIAM** | Extended Security Intelligence & Automation Management | Palo Alto Cortex 的核心 SOC 平台，整合 SIEM + 数据湖 + 自动化分析 |
+| A12 | **AgentiX / XDL** | — | Cortex AgentiX 是其 Agentic AI 编排层（2025-10 发布）；Cortex XDL（Extended Data Lake）是其统一数据湖 |
+
+**产品定位**：传统巨头通过 **XSIAM** 整合 SOC 工具 → 用 **XDL** 统一数据湖 → 加装 **AgentiX** 作为 AI Agent 层，构成大平台型 AI 化反击。
+
+---
+
 ## 速查索引
 
-按字母排序，括号内为编号。
+按字母排序，括号内为编号（A 前缀为附录词条）。
 
 ```
-0-day(42)  ACL(13)  AD(24)  APT(39)  ATT&CK(37)  AV(17)
+0-day(42)  ACL(13)  AD(24)  AgentiX(A12)  Agentic SOC(A1)  AI SOC Analyst(A2)
+AI Threat Hunter(A3)  APT(39)  ATT&CK(37)  Autonomy Level(A10)  AV(17)
 BCP(86)  Beaconing(57)  C2(55)  CASB(29)  CoC(80)  Containment(83)
-Credential Stuffing(49)  CSIRT(2)  CTI(30)  CVE(40)  CVSS(41)
+Copilot(A4)  Credential Stuffing(49)  CSIRT(2)  CTI(30)  CVE(40)  CVSS(41)
 DFIR(78)  DGA(56)  DLP(28)  DMZ(11)  DNS(67)  DoS/DDoS(50)
 DPI(68)  DR(87)  Dropper(47)  EDR(19)  EPP(18)  Eradication(84)
-Exfiltration(59)  FN(74)  FP(72)  GDPR(98)  GRC(100)  Hash(71)
-IAM(20)  IDS(8)  IOA(36)  IOC(35)  IOT(81)  IPS(9)  IR(82)
-ISO 27001(97)  Kerberos(26)  KPI(95)  Lateral Movement(53)
-LDAP(25)  LotL(58)  Malware(43)  MDR(3)  MFA(22)  MitM(51)
+Exfiltration(59)  FN(74)  FP(72)  GDPR(98)  Glass Box AI(A8)  GRC(100)
+Hash(71)  HITL(A9)  IAM(20)  IDS(8)  IOA(36)  IOC(35)  IOT(81)  IPS(9)
+IR(82)  ISO 27001(97)  Kerberos(26)  KPI(95)  Lateral Movement(53)
+LDAP(25)  LLM(A5)  LotL(58)  Malware(43)  MCP(A7)  MDR(3)  MFA(22)  MitM(51)
 MTBC(92)  MTTA(90)  MTTD(89)  MTTR(91)  NDR(62)  NetFlow(66)
 NGFW(7)  NIST(96)  OSINT(32)  PAM(21)  Payload(48)  PCAP(65)
 PCI DSS(99)  Persistence(54)  Playbook(6)  Privilege Escalation(52)
-Proxy(15)  Ransomware(44)  RAT(45)  RCA(79)  Remediation(85)
+Proxy(15)  RAG(A6)  Ransomware(44)  RAT(45)  RCA(79)  Remediation(85)
 Rootkit(46)  RTO/RPO(88)  Runbook(5)  Sandbox(77)  Sigma(69)
 SIEM(60)  SLA(93)  SLO(94)  SOAR(64)  SOC(1)  SOP(4)  SSO(23)
 STIX(33)  TAXII(34)  TDIR(75)  TIP(31)  TLS/SSL(16)  TP(73)
 Triage(76)  TTP(38)  UEBA(63)  VLAN(12)  VPN(14)  WAF(10)
-XDR(61)  YARA(70)  Zero Trust(27)
+XDL(A12)  XDR(61)  XSIAM(A11)  YARA(70)  Zero Trust(27)
 ```
