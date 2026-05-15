@@ -53,6 +53,7 @@ export default defineConfig({
           text: '运营流程',
           items: [
             { text: '告警分诊与响应', link: '/03-processes/triage-and-response' },
+            { text: '漏洞管理流程', link: '/03-processes/vulnerability-management' },
           ],
         },
       ],
