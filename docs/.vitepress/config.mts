@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'New to SOC',
   description: 'SOC 新人学习指南 + 行业观察',
   lang: 'zh-CN',
+  base: '/new-to-soc/',
   cleanUrls: true,
   lastUpdated: true,
 
