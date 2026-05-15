@@ -5,10 +5,3 @@ docs/.vitepress/dist/
 .vitepress/cache/
 .vitepress/dist/
 *.log
-
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example
