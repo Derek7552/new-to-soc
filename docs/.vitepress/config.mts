@@ -74,27 +74,11 @@ export default defineConfig({
           ],
         },
       ],
-      '/product': [
-        {
-          text: '产品视角',
-          items: [
-            { text: '产品思考', link: '/product-thinking' },
-            {
-              text: 'AI Native SOC 竞品分析',
-              link: '/product/0001-cortex-vs-dropzone',
-            },
-          ],
-        },
-      ],
       '/product-thinking': [
         {
           text: '产品视角',
           items: [
             { text: '产品思考', link: '/product-thinking' },
-            {
-              text: 'AI Native SOC 竞品分析',
-              link: '/product/0001-cortex-vs-dropzone',
-            },
           ],
         },
       ],
