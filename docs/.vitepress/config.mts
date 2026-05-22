@@ -15,12 +15,12 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '指南', link: '/01-fundamentals/what-is-soc' },
-      { text: '工具', link: '/02-tools/siem' },
-      { text: '流程', link: '/03-processes/triage-and-response' },
-      { text: '技能', link: '/04-skills/log-analysis' },
-      { text: '资源', link: '/05-resources/learning-resources' },
-      { text: '产品视角', link: '/product-thinking' },
+      { text: '基础概念', link: '/01-fundamentals/what-is-soc' },
+      { text: '常用工具', link: '/02-tools/siem' },
+      { text: '运营流程', link: '/03-processes/triage-and-response' },
+      { text: '技术能力', link: '/04-skills/log-analysis' },
+      { text: '学习资源', link: '/05-resources/learning-resources' },
+      { text: '业务视角', link: '/06-pm-perspective/01-market-landscape' },
       { text: 'GitHub', link: 'https://github.com/Derek7552/new-to-soc' },
     ],
 
@@ -30,6 +30,7 @@ export default defineConfig({
           text: 'SOC 基础',
           items: [
             { text: '什么是 SOC', link: '/01-fundamentals/what-is-soc' },
+            { text: '安全运营是在运营什么', link: '/01-fundamentals/what-security-operations-operates-on' },
             { text: 'CIA 三要素', link: '/01-fundamentals/cia-triad' },
             { text: '网络攻击链', link: '/01-fundamentals/cyber-kill-chain' },
             { text: '常见威胁类型', link: '/01-fundamentals/common-threats' },
@@ -55,6 +56,7 @@ export default defineConfig({
           items: [
             { text: '告警分诊与响应', link: '/03-processes/triage-and-response' },
             { text: '漏洞管理流程', link: '/03-processes/vulnerability-management' },
+            { text: '安全运营方法论', link: '/03-processes/security-operations-methodology' },
           ],
         },
       ],
@@ -75,11 +77,24 @@ export default defineConfig({
           ],
         },
       ],
-      '/product-thinking': [
+      '/06-pm-perspective/': [
         {
-          text: '产品视角',
+          text: '业务视角',
           items: [
-            { text: '产品思考', link: '/product-thinking' },
+            { text: '市场全景', link: '/06-pm-perspective/01-market-landscape' },
+            { text: '用户画像与 JTBD', link: '/06-pm-perspective/02-user-personas' },
+            { text: '产品版图与竞品', link: '/06-pm-perspective/03-product-landscape' },
+            { text: 'AI 原生 SOC 深度解析', link: '/06-pm-perspective/04-ai-soc-deep-dive' },
+            { text: '技术架构决策', link: '/06-pm-perspective/05-technology-architecture' },
+            { text: '商业模式与定价', link: '/06-pm-perspective/06-business-models' },
+            { text: '运营流程与指标', link: '/06-pm-perspective/07-operations-and-metrics' },
+            { text: '企业采购决策', link: '/06-pm-perspective/08-buying-evaluation' },
+          ],
+        },
+        {
+          text: '设计原则',
+          items: [
+            { text: '产品思考（设计原则摘要）', link: '/product-thinking' },
           ],
         },
       ],
